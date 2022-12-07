@@ -3,8 +3,8 @@ let mongoose = require('mongoose')
 let cors = require('cors')
 let bodyParser = require('body-parser')
 require ('dotenv').config()
-const ordenRoute = require('../backend/routes/orden-route')//importamos las rutas
-const userRoute = require('../backend/routes/user.route')
+const ordenRoute = require('./routes/orden-route')//importamos las rutas
+const userRoute = require('./routes/user.route')
 
 mongoose.connect(process.env.MONGODB_URI_2)
     .then((x)=>{
